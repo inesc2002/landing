@@ -1,0 +1,154 @@
+/* Write some CSS below */
+body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+    background-color: rgb(230, 230, 230);
+}
+
+h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-optical-sizing: auto;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size:300;
+  font-optical-sizing: auto;
+}
+
+a{
+    color: #66768E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Custom class design */
+
+.btn-blue{
+    background-color: #66768E;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2px;
+}
+
+.banner {
+    background-image: url(https://classic-sailing.com/wp-content/uploads/2021/10/sailing-west-tallulah-cat-holman-scaled.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0px;
+    background-position: center calc(85% + 50px);
+}
+
+.banner h1 {
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.banner h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+    font-style: bold;
+    font-style: italic;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-white {
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    border-radius: 3px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.card-logo {
+  width: 80px;
+  position: absolute;
+  top: 10px; 
+  left: 10px;
+}
+  
+
+.Card-White h3{
+  font-style: italic;
+}
+
+.menu-title {
+  text-align:center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+.Footer {
+  background-color: #66768E;
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+
+}
+
+.Footer-Text {
+  font-style: italic;
+}
+
+
+
+/* Cards media queries */
+
+@media (max-width: 800px) {
+    .Cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .Card-White {
+      width: auto;
+    }
+  }
+    
+  /* Container media queries */
+  @media (min-width: 500px) {
+    .container {
+      width: 400px;
+    }
+  }
+  
+  
+  @media (min-width: 800px) {
+    .container {
+      width: 600px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .container {
+      width: 800px;
+    }
+  }
+
+
+
+
+
+
