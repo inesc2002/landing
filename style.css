@@ -26,7 +26,7 @@ a{
 }
 
 a:hover {
-    color: blue;
+    color: #0056b3;
 }
 
 /* Custom class design */
@@ -85,7 +85,7 @@ a:hover {
 }
   
 
-.Card-White h3{
+.card-white h3{
   font-style: italic;
 }
 
@@ -95,26 +95,83 @@ a:hover {
   font-weight: bold;
 }
 
-.Cards {
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
   }
 
-.Footer {
-  background-color: #66768E;
-  color: white;
-  text-align: center;
-  padding: 30px 0px;
 
-}
-
-.Footer-Text {
-  font-style: italic;
-}
-
-
-
+  .footer {
+    background-color: #66768E;
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-column {
+    flex: 1;
+    max-width: calc(50% - 20px); 
+    padding-right: 0px; 
+    margin-left: 200px; 
+  }
+  .right-column {
+    flex: 1;
+    padding-left: 0px;
+    margin-left: 200px; 
+    margin-top: 50px;
+  }
+  .centered-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    max-width: 200px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+  }
+  
+  .form-example {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="purpose"],
+  input[type="message"],
+  input[type="phone"] {
+    width: 90%;
+    height: 25px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; 
+  }
+  
+  input[type="submit"] {
+    background-color: #97b4d1;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
 /* Cards media queries */
 
 @media (max-width: 800px) {
